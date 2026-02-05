@@ -144,7 +144,7 @@ export default function Layout({ children }) {
           <div className="border-t border-gray-700 mt-8 pt-4">
             <div className="flex justify-center gap-6 mb-4">
               <a 
-                href="https://www.instagram.com" 
+                href="https://www.instagram.com/denoblescholarsacademy?igsh=NDNwdGQ5N2RnOHVu&utm_source=qr" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
@@ -155,7 +155,7 @@ export default function Layout({ children }) {
                 </svg>
               </a>
               <a 
-                href="https://www.tiktok.com" 
+                href="https://www.tiktok.com/@_denoblescholarsacademy?_r=1&_t=ZS-93fdMMaH30H" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-white transition"
