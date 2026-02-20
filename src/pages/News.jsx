@@ -26,8 +26,8 @@ export default function News() {
       type: "News"
     },
     {
-      title: "Parent-Teacher Partnership",
-      description: "This session highlights the strong collaboration between parents and teachers, share insights, and work together to support learning and development of our children.",
+      title: "Annual Sport Day",
+      description: "Our Annual Sports Day was filled with exciting competitions, outstanding performances, and memorable moments on the field.",
       type: "Event"
     }
   ]
@@ -35,6 +35,7 @@ export default function News() {
   const galleryImages = ['CD1.jpeg','CD2.jpeg','CD3.jpeg','CD4.jpeg','CD5.jpeg','CD6.jpeg','CD7.jpeg','CD8.jpeg','CD9.jpeg','CD10.jpeg','CD11.jpeg','CD12.jpeg','CD13.jpeg','CD14.jpeg','CD15.jpeg']
   const excursionImages = ['E2.jpeg','E3.jpeg','E4.jpeg','E5.jpeg','E6.jpeg','E7.jpeg']
   const indomieImages = ['IPS1.jpeg','IPS2.jpeg','IPS3.jpeg','IPS4.jpeg']
+  const sportDayImages = ['SD1.jpeg','SD2.jpeg','SD3.jpeg','SD4.jpeg','SD5.jpeg','SD6.jpeg','SD7.jpeg','SD8.jpeg','SD9.jpeg','SD10.jpeg']
 
   return (
     <div className="py-8 md:py-12">
@@ -166,6 +167,27 @@ export default function News() {
           ))}
         </div>
       </div>
+
+      {/* Annual Sport Day Gallery */}
+      {events.slice(3).some(item => item.title === "Annual Sport Day") && (
+        <section className="w-full bg-gray-50 mt-8 animate-fade-in">
+          <div className="mx-auto max-w-7xl px-2 md:px-4 py-6">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+              {sportDayImages.map((img, i) => (
+                <div key={i} className="rounded overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                  <img
+                    src={`/Annual Sport Day/${img}`}
+                    alt={`Annual Sport Day ${i+1}`}
+                    loading="lazy"
+                    className="w-full h-32 sm:h-40 md:h-48 object-cover gallery-animate gallery-fade"
+                    style={{ animationDelay: `${i * 0.25}s` }}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
     </div>
   )
 }

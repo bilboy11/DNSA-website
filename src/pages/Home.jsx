@@ -49,20 +49,22 @@ export default function Home() {
           <div className="max-w-4xl mx-auto">
             <div className="bg-gradient-to-r from-blue-50 to-gray-50 p-6 md:p-8 rounded-lg shadow-md mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
-                De Noble Scholars Academy is a premier educational institution dedicated to nurturing young minds 
-                and preparing students for success in an ever-changing world. Founded on the principle that 
-                "Education is Light," we strive to illuminate the path to academic excellence, character 
-                development, and lifelong learning.
+              De Noble Scholars Academy was established in September 2007 with just five pupils, three teachers, a security officer, and a nanny. 
+              It was founded with the sole aim of providing quality education and promoting excellence in learning. 
+              From its humble beginnings, the school has remained committed to building a strong academic foundation for its students.
               </p>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
-                Our school provides a comprehensive educational experience that combines rigorous academics 
-                with holistic development. We believe in fostering critical thinking, creativity, and 
-                innovation while instilling strong values and a sense of community responsibility in our students.
+              The academy is dedicated to creating a conducive learning environment that nurtures learners into becoming self-reliant, responsible, and valuable leaders in society. 
+              Guided by the principle that “Education is Light”, the school seeks to illuminate the path toward academic excellence, character development, and lifelong learning.
+              </p>
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-4">
+              All sections of the school maintain healthy competition in pursuit of academic excellence. 
+              This culture of achievement has contributed to a steady increase in student enrollment each year, fueled by the growing interest and aspirations of the community.
               </p>
               <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-                With state-of-the-art classrooms, experienced teachers, and a commitment to excellence, 
-                De Noble Scholars Academy creates an environment where every student can thrive and reach 
-                their full potential.
+              De Noble Scholars Academy provides a comprehensive educational experience that blends rigorous academics with holistic development. 
+              With experienced teachers, well-equipped classrooms, and a commitment to innovation, creativity, and strong moral values, 
+              the school ensures that every student is empowered to thrive and reach their full potential in an ever-changing world.
               </p>
             </div>
 
