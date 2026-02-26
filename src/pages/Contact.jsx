@@ -1,3 +1,12 @@
+import ContactInfoCard from '../components/ContactInfoCard'
+
+const contactInfo = [
+  { icon: '📍', title: 'Address', children: <>No 13 Ayuba Madaki Close<br />Rigasa New Extension<br />Kaduna</> },
+  { icon: '📞', title: 'Phone', children: <>Main Office: 08035598876<br /><a href="tel:08035598876" className="text-blue-600 hover:text-blue-800">Call now</a></> },
+  { icon: '✉️', title: 'Email', children: <a href="mailto:denoblescholarsacademy@gmail.com" className="text-blue-600 hover:text-blue-800">denoblescholarsacademy@gmail.com</a> },
+  { icon: '🕒', title: 'Office Hours', children: <>Monday - Friday<br />8:00 AM - 3:00 PM</> }
+]
+
 export default function Contact() {
   return (
     <div className="py-8 md:py-12">
@@ -5,7 +14,6 @@ export default function Contact() {
         <h1 className="text-3xl md:text-4xl font-bold mb-6 md:mb-8 text-gray-800">Contact Us</h1>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
-          {/* Contact Form */}
           <div>
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Send Us a Message</h2>
             <form className="bg-white p-4 md:p-6 rounded-lg shadow-md space-y-6">
@@ -25,56 +33,14 @@ export default function Contact() {
             </form>
           </div>
 
-          {/* Contact Information */}
           <div>
             <h2 className="text-2xl font-bold mb-6 text-gray-800">Get in Touch</h2>
-            
             <div className="space-y-6 mb-8">
-              <div className="flex items-start bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div className="text-3xl md:text-4xl mr-4 flex-shrink-0">📍</div>
-                <div>
-                  <h3 className="font-bold text-gray-800 mb-1 text-lg">Address</h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    No 13 Ayuba Madaki Close<br />
-                    Rigasa New Extension<br />
-                    Kaduna
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div className="text-3xl md:text-4xl mr-4 flex-shrink-0">📞</div>
-                <div>
-                  <h3 className="font-bold text-gray-800 mb-1 text-lg">Phone</h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    Main Office: 08035598876<br />
-                    <a href="tel:08035598876" className="text-blue-600 hover:text-blue-800">Call now</a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div className="text-3xl md:text-4xl mr-4 flex-shrink-0">✉️</div>
-                <div>
-                  <h3 className="font-bold text-gray-800 mb-1 text-lg">Email</h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    <a href="mailto:denoblescholarsacademy@gmail.com" className="text-blue-600 hover:text-blue-800">
-                      denoblescholarsacademy@gmail.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start bg-white p-4 md:p-6 rounded-lg shadow-md hover:shadow-lg transition">
-                <div className="text-3xl md:text-4xl mr-4 flex-shrink-0">🕒</div>
-                <div>
-                  <h3 className="font-bold text-gray-800 mb-1 text-lg">Office Hours</h3>
-                  <p className="text-sm md:text-base text-gray-600">
-                    Monday - Friday<br />
-                    8:00 AM - 3:00 PM
-                  </p>
-                </div>
-              </div>
+              {contactInfo.map((info, i) => (
+                <ContactInfoCard key={i} icon={info.icon} title={info.title}>
+                  {info.children}
+                </ContactInfoCard>
+              ))}
             </div>
           </div>
         </div>
