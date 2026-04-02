@@ -72,7 +72,7 @@ export default function Layout({ children }) {
               <p className="text-sm md:text-base text-gray-300">
                 No 13 Ayuba Madaki Close<br />
                 Rigasa, Kaduna<br />
-                Phone: 08035598876<br />
+                Phone: 08035598876, 09038587829<br />
                 Email: denoblescholarsacademy@gmail.com
               </p>
             </div>

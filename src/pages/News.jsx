@@ -15,7 +15,8 @@ export default function News() {
     0: { images: ['CD1.jpeg','CD2.jpeg','CD3.jpeg','CD4.jpeg','CD5.jpeg','CD6.jpeg','CD7.jpeg','CD8.jpeg','CD9.jpeg','CD10.jpeg','CD11.jpeg','CD12.jpeg','CD13.jpeg','CD14.jpeg','CD15.jpeg'], folder: '/news', altPrefix: 'Gallery' },
     1: { images: ['E2.jpeg','E3.jpeg','E4.jpeg','E5.jpeg','E6.jpeg','E7.jpeg'], folder: '/news', altPrefix: 'Excursion' },
     2: { images: ['IPS1.jpeg','IPS2.jpeg','IPS3.jpeg','IPS4.jpeg'], folder: '/news', altPrefix: 'Indomie Visit' },
-    4: { images: ['DSC_0043.jpg.jpeg','DSC_0078.jpg.jpeg','DSC_0080.jpg.jpeg','DSC_0082.jpg.jpeg','DSC_0083.jpg.jpeg','DSC_0086.jpg.jpeg','GD1.jpeg','GD2.jpeg','GD3.jpeg','GD4.jpeg'], folder: '/Grad', altPrefix: 'Student Recognition' },
+    3: { images: ['SPG1.jpeg','SPG2.jpeg','SPG4.jpeg','SPG5.jpeg','SPG6.jpeg','SPG7.jpeg','SPG8.jpeg','SPG9.jpeg','SPG10.jpeg','SPG11.jpeg','SPG12.jpeg','SPG13.jpeg','SPG14.jpeg','SPG15.jpeg','SPG17.jpeg','SPG18.jpeg','SPG19.jpeg','SPG20.jpeg'], folder: '/Speech n Price', altPrefix: 'Speech and Prize Giving Day' },
+    4: { images: ['DSC_0042.jpg.jpeg','DSC_0043.jpg.jpeg','DSC_0078.jpg.jpeg','DSC_0079.jpg.jpeg','DSC_0080.jpg.jpeg','DSC_0082.jpg.jpeg','DSC_0083.jpg.jpeg','DSC_0085.jpg.jpeg','DSC_0086.jpg.jpeg','DSC_0087.jpg.jpeg','GD1.jpeg','GD2.jpeg','GD3.jpeg','GD4.jpeg'], folder: '/Grad', altPrefix: 'Student Recognition' },
     5: { images: ['SD1.jpeg','SD2.jpeg','SD3.jpeg','SD4.jpeg','SD5.jpeg','SD6.jpeg','SD7.jpeg','SD8.jpeg','SD9.jpeg','SD10.jpeg'], folder: '/Annual Sport Day', altPrefix: 'Annual Sport Day', cols: 'lg:grid-cols-5' }
   }
 

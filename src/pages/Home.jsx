@@ -28,15 +28,15 @@ const programs = [
 const stats = [
   { value: '95%', label: 'Graduation Rate' },
   { value: '2000+', label: 'Students' },
-  { value: '60+', label: 'Staff' },
+  { value: '80+', label: 'Staff' },
   { value: '10+', label: 'Years of Excellence' }
 ]
 
 const infrastructure = [
   { image: '/Classroom.png', title: 'Modern Classrooms', description: 'Spacious, well-ventilated, and equipped with modern educational technology and interactive learning tools.' },
-  { image: '/Lab.png', title: 'Science & Tech Labs', description: 'Fully equipped laboratories for physics, chemistry, biology, and computer science experiments.' },
+  { image: '/LB5.jpeg', title: 'Science & Tech Labs', description: 'Fully equipped laboratories for physics, chemistry, biology, and computer science experiments.' },
   { image: '/Library.png', title: 'Library & Learning Center', description: 'Extensive collection of books, digital resources, and quiet study spaces for research and reading.' },
-  { image: '/sports.png', title: 'Sports Facilities', description: 'Basketball court, football field, volleyball court, and training equipment for athletic development.' }
+  { image: '/CL1.jpeg', title: 'ICT Facilities', description: 'Our school is equipped with modern ICT facilities to support digital learning and innovation.' }
 ]
 
 export default function Home() {
@@ -65,9 +65,9 @@ export default function Home() {
             ))}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-            <InfoCard icon="🎯" title="Our Mission" description="To provide exceptional education that empowers students to become confident, responsible, and successful individuals who contribute positively to society." borderColor="blue" delay="0.3s" />
-            <InfoCard icon="✨" title="Our Vision" description="To be a leading educational institution recognized for academic excellence, innovative teaching methods, and the holistic development of well-rounded students." borderColor="green" delay="0.4s" />
-            <InfoCard icon="💎" title="Our Values" description={['Integrity & Honesty', 'Respect & Empathy', 'Excellence & Innovation', 'Community & Service']} borderColor="purple" delay="0.5s" />
+            <InfoCard icon="🎯" title="Our Mission" description="To provide a condusive learning environment for learners to achieve their maximum potentials. To provide qualitative education & excellence in the learners." borderColor="blue" delay="0.3s" />
+            <InfoCard icon="✨" title="Our Vision" description="To educate learners to become valuable citizens, self reliant and responsible leaders." borderColor="green" delay="0.4s" />
+            <InfoCard icon="💎" title="Our Values" description={['Integrity & Honesty', 'Qualitative Education', 'Self Discipline', 'Community Service']} borderColor="purple" delay="0.5s" />
             <InfoCard icon="🏆" title="Our Commitment" description="We are committed to providing a safe, inclusive, and nurturing environment where every student feels valued and supported in their educational journey." borderColor="orange" delay="0.6s" />
           </div>
         </div>
@@ -83,22 +83,15 @@ export default function Home() {
           <div className="animate-slide-in-right">
             <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-800">Our Visionary Leader</h3>
             <p className="text-lg md:text-xl font-semibold text-blue-900 mb-4">Hajiya Hadiza Ismail</p>
-            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed">
-              Replace this text with information about the school's founder and their vision for education. Share their background, achievements, and the philosophy that drives De Noble Scholars Academy.
+            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed text-justify">
+              Hadiza Ismail is an experienced educationist from Bama Local Government Area of Borno State, of Shuwa Arab heritage. She began her early education in Kaduna and continued at Queen Amina College, Kaduna. She holds a Higher National Diploma (HND) in Business Studies from Kaduna Polytechnic, as well as a Postgraduate Diploma in Education from the National Teachers Institute.
             </p>
-            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed">
-              Add more details about their educational background, experience in the field, and commitment to excellence and student development.
+            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed text-justify">
+               As a dedicated educator and school proprietress, Hajiya Hadiza is deeply passionate about nurturing children, especially in their early developmental stages. She is committed to creating a warm, engaging environment where children learn through interaction, play, and care.
             </p>
-            <div className="mt-6">
-              <h4 className="font-bold text-gray-800 mb-2">Key Focus Areas:</h4>
-              <ul className="space-y-2 text-gray-600">
-                {['Academic Excellence', 'Character Development', 'Innovation & Creativity', 'Community Service'].map((item, i) => (
-                  <li key={i} className="flex items-center animate-fade-in" style={{ animationDelay: `${(i + 1) * 0.1}s` }}>
-                    <span className="text-blue-600 mr-3">✓</span> {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <p className="text-gray-600 mb-4 text-base md:text-lg leading-relaxed text-justify">
+               Known for her thoughtful and approachable personality, she combines strong analytical skills with a friendly and outspoken nature. Beyond education, she enjoys reading, research, and supporting those in need. She is happily married with children.
+            </p>
           </div>
         </div>
       </Section>
