@@ -70,7 +70,7 @@ export default function Layout({ children }) {
             <div>
               <h3 className="text-lg md:text-xl font-bold mb-4">Contact Info</h3>
               <p className="text-sm md:text-base text-gray-300">
-                No 13 Ayuba Madaki Close<br />
+                No 3 Ayuba Madaki Close<br />
                 Rigasa, Kaduna<br />
                 Phone: 08035598876, 09038587829<br />
                 Email: denoblescholarsacademy@gmail.com
