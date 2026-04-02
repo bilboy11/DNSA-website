@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Section from '../components/Section'
 import FeatureCard from '../components/FeatureCard'
 import InfoCard from '../components/InfoCard'
@@ -122,8 +123,8 @@ export default function Home() {
             Take the first step towards an exceptional education. Contact us today!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/contact" className="inline-block bg-blue-900 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:bg-blue-800 hover:scale-105 transition-all duration-300 text-sm md:text-base animate-slide-up-fade" style={{ animationDelay: '0.3s' }}>Contact Us</a>
-            <a href="/academics" className="inline-block bg-white text-blue-900 border-2 border-blue-900 px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:bg-blue-50 hover:scale-105 transition-all duration-300 text-sm md:text-base animate-slide-up-fade" style={{ animationDelay: '0.4s' }}>Learn More</a>
+            <Link to="/contact" className="inline-block bg-blue-900 text-white px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:bg-blue-800 hover:scale-105 transition-all duration-300 text-sm md:text-base animate-slide-up-fade" style={{ animationDelay: '0.3s' }}>Contact Us</Link>
+            <Link to="/academics" className="inline-block bg-white text-blue-900 border-2 border-blue-900 px-6 md:px-8 py-2 md:py-3 rounded-lg font-semibold hover:bg-blue-50 hover:scale-105 transition-all duration-300 text-sm md:text-base animate-slide-up-fade" style={{ animationDelay: '0.4s' }}>Learn More</Link>
           </div>
         </div>
       </Section>
