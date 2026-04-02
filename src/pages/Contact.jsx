@@ -51,40 +51,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-
-      {/* Google Maps Section */}
-      <section className="py-6 md:py-12 bg-gray-50 animate-fade-in">
-        <div className="container mx-auto px-4">
-          <h2 className="text-xl md:text-3xl font-bold mb-4 md:mb-8 text-gray-800 text-center animate-fade-in-down">Find Us on Google Maps</h2>
-          <div className="rounded-lg overflow-hidden shadow-lg animate-slide-up-fade" style={{ animationDelay: '0.2s' }}>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3934.123456789!2d7.440123456!3d10.512345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDA1JzQ0LjAiTiA3wrAyNycyNi40IkU!5e0!3m2!1sen!2sng!4v1234567890"
-              width="100%"
-              height="300"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              className="w-full hover:shadow-xl transition-all duration-300"
-              title="De Noble Scholars Academy Location"
-            ></iframe>
-          </div>
-          <div className="mt-4 md:mt-6 text-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <p className="text-gray-600 mb-2 text-sm md:text-base">
-              <strong>Address:</strong> No 3 Ayuba Madaki Close, Kabala Doki, Kaduna 800283, Kaduna
-            </p>
-            <a 
-              href="https://maps.google.com/?q=3+Ayuba+Madaki+Close,+Kabala+Doki,+Kaduna+800283,+Kaduna"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-blue-900 text-white px-4 md:px-6 py-2 md:py-3 rounded-lg hover:bg-blue-800 hover:scale-105 transition-all duration-300 animate-slide-up-fade text-sm md:text-base"
-              style={{ animationDelay: '0.6s' }}
-            >
-              Get Directions
-            </a>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }
