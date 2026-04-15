@@ -5,6 +5,10 @@ html, body, #root {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -225,6 +229,10 @@ body {
 
 /* Reduced motion for users who prefer it */
 @media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
   .gallery-animate,
   .animate-fade-in-down,
   .animate-slide-up-fade,
