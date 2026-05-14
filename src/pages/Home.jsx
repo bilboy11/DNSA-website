@@ -26,11 +26,13 @@ const programs = [
   { title: 'Extracurriculars', description: 'Sports, arts, culture, clubs, and community service opportunities for well-rounded development.' }
 ]
 
+const STATS_COUNT_MS = 10_000
+
 const stats = [
-  { value: '95%', label: 'Graduation Rate' },
-  { value: '2000+', label: 'Students' },
-  { value: '80+', label: 'Staff' },
-  { value: '10+', label: 'Years of Excellence' }
+  { target: 95, suffix: '%', label: 'Graduation Rate' },
+  { target: 2000, suffix: '+', label: 'Students' },
+  { target: 80, suffix: '+', label: 'Staff' },
+  { target: 10, suffix: '+', label: 'Years of Excellence' }
 ]
 
 const infrastructure = [
@@ -52,7 +54,7 @@ export default function Home() {
 
       <Section title="Why Choose Us?" bg="bg-gray-50">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {features.map((f, i) => <FeatureCard key={i} {...f} delay={`${(i + 1) * 0.1}s`} />)}
+          {features.map((f, i) => <FeatureCard key={i} {...f} delay={`${(i + 1) * 0.10}s`} />)}
         </div>
       </Section>
 
@@ -106,7 +108,9 @@ export default function Home() {
       <section className="py-12 md:py-16 bg-blue-900 text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
-            {stats.map((s, i) => <StatCard key={i} {...s} delay={`${(i + 1) * 0.1}s`} />)}
+            {stats.map((s, i) => (
+              <StatCard key={i} {...s} durationMs={STATS_COUNT_MS} delay={`${(i + 1) * 0.1}s`} />
+            ))}
           </div>
         </div>
       </section>
